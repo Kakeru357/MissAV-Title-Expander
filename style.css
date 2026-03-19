@@ -1,0 +1,17 @@
+/* タイトルの省略（...）を解除して全文表示する */
+.my-2.text-sm.text-secondary, 
+.text-secondary.group-hover\:text-primary,
+.line-clamp-2 {
+    display: block !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    -webkit-line-clamp: unset !important;
+    height: auto !important;
+    min-height: 2.5em; /* レイアウト崩れ防止の最低高 */
+}
+
+/* カードの高さが自動調整されるように設定 */
+.relative.grid.grid-cols-1 {
+    height: auto !important;
+}
